@@ -1,15 +1,15 @@
 ---
 name: Alexander
 surname: Blumenfeld
-position: "PhD student"
-address: "Texas A&M University, Department of Entomology"
+position: "Postdoctoral Associate"
+address: "Yale University, Department of Ecology & Evolutionary Biology"
 phone: +1 (951)-532-0000
 email: "alex.blumenfeld1993@gmail.com"
 twitter: alexjblumenfeld
 researchgate: Alexander-Blumenfeld
 orcid: 0000-0002-9019-1693
 date: "`r format(Sys.time(), '%B %Y')`"
-headcolor: "AD8E93"
+headcolor: "0f4d92"
 output: 
   vitae::awesomecv:
     #pandoc_args: ["--lua-filter=bold_name.lua"]
@@ -33,16 +33,16 @@ tribble(
   ~ Where,
   ~ Details,
   "Doctor of Philosophy, Entomology",
-  "Sep 2017 - May 2022",
+  "August 2022",
   "Texas A&M University",
   "College Station, Texas",
-  c("Advisor: Dr. Ed Vargo","GPA: 4.0"),
+  "Advisor: Ed Vargo",
   #NEXT
   "Bachelor of Science, Environmental Science & Resource Management",
-  "Sep 2012 - Mar 2016",
+  "March 2016",
   "University of Washington",
   "Seattle, Washington",
-  "GPA: 3.45",
+  NA
 ) %>% 
   detailed_entries(
     what = Degree,
@@ -53,24 +53,26 @@ tribble(
     )
 ```
 
-# Experience
-
-# Select Publications
-My full Google Scholar profile [**here**](https://scholar.google.com/citations?user=nQyX0eoAAAAJ&hl=en)
+# Publications
+My Google Scholar profile [**here**](https://scholar.google.com/citations?user=nQyX0eoAAAAJ&hl=en)
 ```{r}
 bibliography_entries("publications.bib")
 ```
 
-# Select Presentations
-*Invited Seminars*
+# Presentations
+*Invited Presentations*
 ```{r}
 bibliography_entries("invited_seminar.bib")
 ```
 
-*Conference Presentations*
+*Contributed Presentations*
 ```{r}
 bibliography_entries("conf_presentations.bib")
 ```
 
-# Technical Skills
+*Co-Authored Presentations*
 
+# Grants, Awards, & Fellowships
+
+# Service
+*Peer Review*
