@@ -56,12 +56,21 @@ tribble(
 # Experience
 
 # Select Publications
-
+My full Google Scholar profile [**here**](https://scholar.google.com/citations?user=nQyX0eoAAAAJ&hl=en)
 ```{r}
-bibliography_entries("my_papers.bib")
+bibliography_entries("publications.bib")
 ```
 
 # Select Presentations
+*Invited Seminars*
+```{r}
+bibliography_entries("invited_seminar.bib")
+```
+
+*Conference Presentations*
+```{r}
+bibliography_entries("conf_presentations.bib")
+```
 
 # Technical Skills
 

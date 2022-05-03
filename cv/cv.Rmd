@@ -1,0 +1,76 @@
+---
+name: Alexander
+surname: Blumenfeld
+position: "PhD student"
+address: "Texas A&M University, Department of Entomology"
+phone: +1 (951)-532-0000
+email: "alex.blumenfeld1993@gmail.com"
+twitter: alexjblumenfeld
+researchgate: Alexander-Blumenfeld
+orcid: 0000-0002-9019-1693
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: "AD8E93"
+output: 
+  vitae::awesomecv:
+    #pandoc_args: ["--lua-filter=bold_name.lua"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+library(vitae)
+```
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree,
+  ~ Year,
+  ~ Institution,
+  ~ Where,
+  ~ Details,
+  "Doctor of Philosophy, Entomology",
+  "Sep 2017 - May 2022",
+  "Texas A&M University",
+  "College Station, Texas",
+  c("Advisor: Dr. Ed Vargo","GPA: 4.0"),
+  #NEXT
+  "Bachelor of Science, Environmental Science & Resource Management",
+  "Sep 2012 - Mar 2016",
+  "University of Washington",
+  "Seattle, Washington",
+  "GPA: 3.45",
+) %>% 
+  detailed_entries(
+    what = Degree,
+    when = Year,
+    with = Institution,
+    where = Where,
+    why = Details
+    )
+```
+
+# Experience
+
+# Select Publications
+My full Google Scholar profile [**here**](https://scholar.google.com/citations?user=nQyX0eoAAAAJ&hl=en)
+```{r}
+bibliography_entries("publications.bib")
+```
+
+# Select Presentations
+*Invited Seminars*
+```{r}
+bibliography_entries("invited_seminar.bib")
+```
+
+*Conference Presentations*
+```{r}
+bibliography_entries("conf_presentations.bib")
+```
+
+# Technical Skills
+
