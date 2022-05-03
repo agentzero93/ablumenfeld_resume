@@ -1,2 +1,2 @@
-# Ablumenfeld_resume
-My non-academic résumé.
+# Information about me
+My academic CV and non-academic résumé.
